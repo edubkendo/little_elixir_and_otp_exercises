@@ -1,5 +1,6 @@
 defmodule ID3Parser do
   def parse(file_name) do
+
     case File.read(file_name) do
       {:ok, mp3} ->
         mp3_byte_size = byte_size(mp3) - 128
